@@ -1,0 +1,12 @@
+1. Create empty stack
+2. Read infix expression
+3. For each character:
+    IF operand → add to result
+    IF '(' → push to stack
+    IF ')' → pop until '('
+    IF operator:
+        while stack not empty AND precedence is higher:
+            pop to result
+        push operator
+4. Pop remaining operators
+5. Output postfix
